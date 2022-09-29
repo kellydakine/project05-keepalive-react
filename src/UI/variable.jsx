@@ -1,5 +1,6 @@
 export const backgroundLogin = "linear-gradient(180deg, #33383D 0%, #1C1D20)";
-export const primaryButton = "linear-gradient(90deg, #FF2D04 0%, #C13216 100%)";
+export const backgroundButton = "linear-gradient(90deg, #FF2D04 0%, #C13216 100%)";
+export const buttonShadow = "inset 5px 5px 15px rgba(0, 0, 0, 0.15)";
 export const mainColor = "#E0E0E0";
 export const whiteColor = "#FFFFFF";
 export const secondaryColor = "#E9B425";
