@@ -24,4 +24,7 @@ export const Icon = styled.div`
   display: flex;
   align-items: center;
   margin-left: 1rem;
+  margin-top: -1.5rem;
+  transition: 1s;
+  ${(props) => props.clicked ? "transform: translate(-50px,0)" : "transform: translate(0)"}
 `;
