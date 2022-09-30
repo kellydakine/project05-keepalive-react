@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { SectionLogin, Form, BackgroundLogin, ImgLogo } from "./LoginStyle";
+import { SectionLogin, Form, BackgroundLogin, ImgLogo, Span } from "./LoginStyle";
 import FormInput from "../../components/FormInput/FormInput";
 import Button from "../../components/Button/Button";
 import Logo from "../../assets/logo-compass.png";
@@ -27,6 +27,7 @@ const Login = () => {
       navigate("/home");
     }
     setError("Ops, usuário ou senha inválidos. Tente novamente!");
+    console.log({ username }, { password });
   }
 
   return (
@@ -39,7 +40,7 @@ const Login = () => {
           placeholder="Usuário"
           style={
             !error
-              ? { border: "1px solid #FFFFFF" }
+              ? { border: "1px solid #E0E0E0" }
               : { border: "1px solid #E9B425" }
           }
           name="username"
@@ -50,15 +51,15 @@ const Login = () => {
           placeholder="Senha"
           style={
             !error
-              ? { border: "1px solid #FFFFFF" }
+              ? { border: "1px solid #E0E0E0" }
               : { border: "1px solid #E9B425" }
           }
           name="password"
           type="password"
           onChange={({ target }) => setPassword(target.value)}
         />
+        {error && <Span>{error}</Span>}
         <Button>Continuar</Button>
-        {error && <span>{error}</span>}
       </Form>
       <BackgroundLogin>
         <ImgLogo src={Logo} alt="Compass Logo"></ImgLogo>

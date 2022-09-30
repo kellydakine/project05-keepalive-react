@@ -12,7 +12,7 @@ const FormInput = ({ placeholder, name, type, onChange, style }) => {
         style={style}
         name={name}
         type={type}
-        onChance={onChange}
+        onChange={onChange}
         onBlur={(event) =>
           event.target.value.length > 0 ? setClicked(true) : setClicked(false)
         }

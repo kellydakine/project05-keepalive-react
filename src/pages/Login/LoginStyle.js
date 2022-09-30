@@ -1,4 +1,4 @@
-import { backgroundLogin, whiteColor } from "../../UI/variable";
+import { backgroundLogin, whiteColor, secondaryColor, mainColor } from "../../UI/variable";
 import styled from "styled-components";
 import Computer from "../../assets/computer.svg";
 
@@ -10,13 +10,13 @@ export const SectionLogin = styled.section`
   height: 100vh;
 `;
 
-export const Form = styled.div`
+export const Form = styled.form`
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   /* margin: 0 auto; */
-  color: #e0e0e0;
+  color: ${mainColor};
   width: 50%;
 
   h1 {
@@ -39,6 +39,13 @@ export const Form = styled.div`
   font-size: 1.5rem;
   }
 `;
+
+export const Span = styled.span`
+  color: ${secondaryColor};
+  width: 30%;
+  text-align: center;
+  padding-top: 0.5rem;
+`
 
 export const BackgroundLogin = styled.div`
   background-image: url(${Computer});

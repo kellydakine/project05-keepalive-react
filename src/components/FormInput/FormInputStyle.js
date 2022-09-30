@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { whiteColor } from "../../UI/variable";
+import { whiteColor, mainColor } from "../../UI/variable";
 
 export const ContainerInput = styled.div`
   display: flex;
@@ -8,14 +8,13 @@ export const ContainerInput = styled.div`
   input {
     border-radius: 50px;
     background: none;
-    /* border: ${whiteColor}; */
     padding: 0.9rem;
     margin-bottom: 1.5rem;
     width: 16rem;
-    color: ${whiteColor};
+    color: ${mainColor};
     font-family: "Mark Pro", sans-serif;
     ::-webkit-input-placeholder {
-      color: white;
+      color: ${mainColor};
     }
   }
 `;
