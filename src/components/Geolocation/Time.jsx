@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { ContainerTime } from "./TimeStyle.js";
 
 const SetTimer = () => {
   const [dateState, setDateState] = useState(new Date());
@@ -6,7 +7,7 @@ const SetTimer = () => {
     setInterval(() => setDateState(new Date()), 30000);
   }, []);
   return (
-    <div>
+    <ContainerTime>
       <p>
         {dateState.toLocaleString("pt-BR", {
           hour: "numeric",
@@ -23,7 +24,7 @@ const SetTimer = () => {
           year: "numeric",
         })}
       </span>
-    </div>
+    </ContainerTime>
   );
 };
 

@@ -1,5 +1,6 @@
 import React from "react";
-import { TiWeatherPartlySunny } from "react-icons/ti";
+import WeatherLogo from "../../assets/weather-logo.svg";
+import { ContainerWeather } from "./WeatherStyle";
 
 class Weather extends React.Component {
   state = {
@@ -61,13 +62,13 @@ class Weather extends React.Component {
     const { city, temperatureC } = this.state;
     if (city) {
       return (
-        <div>
+        <ContainerWeather>
           <p>{city} - SC</p>
           <div>
-            <TiWeatherPartlySunny />
+            <img src={WeatherLogo}  alt="Weather logo"/>
             <h2>{temperatureC}°</h2>
           </div>
-        </div>
+        </ContainerWeather>
       );
     } else {
       return <span>Loading...</span>;

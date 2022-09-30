@@ -9,6 +9,7 @@ export const Container = styled.div`
 
 export const Header = styled.header`
     display: flex;
+    align-items: flex-start;
     justify-content: space-between;
     padding: 1.5rem;
 `

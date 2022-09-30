@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { whiteColor, mainColor } from "../../UI/variable";
+import { mainColor } from "../../UI/variable";
 
 export const ContainerInput = styled.div`
   display: flex;
