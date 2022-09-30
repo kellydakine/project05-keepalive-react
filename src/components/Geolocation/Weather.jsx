@@ -2,7 +2,6 @@ import React from "react";
 import { TiWeatherPartlySunny } from "react-icons/ti";
 
 class Weather extends React.Component {
-  REACT_APP_WEATHER_API_KEY = "502d71885acddcadadd5c2ff87683ea1";
   state = {
     lat: undefined,
     lon: undefined,

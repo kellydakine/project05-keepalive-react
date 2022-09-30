@@ -1,0 +1,14 @@
+import styled from "styled-components";
+import { backgroundHome } from "../../UI/variable";
+
+export const Container = styled.div`
+    background: ${backgroundHome};
+    width: 100vw;
+    height: 100vh;
+`
+
+export const Header = styled.header`
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem;
+`
