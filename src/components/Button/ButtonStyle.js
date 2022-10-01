@@ -11,9 +11,13 @@ export const BtnContinue = styled.button`
   height: 3rem;
   color: white;
   font-size: 15px;
-  margin-top: 5em;
+  margin-top: 4em;
   cursor: pointer;
   :active {
     background: #DE2904;
+  }
+
+  @media (max-width: 320px) {
+   width: 15rem;
   }
 `;

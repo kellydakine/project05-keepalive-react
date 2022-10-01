@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import { SectionLogin, Form, BackgroundLogin, ImgLogo, Span, Banner } from "./LoginStyle";
 import FormInput from "../../components/FormInput/FormInput";
 import Button from "../../components/Button/Button";
-import Logo from "../../assets/logo-compass.svg";
+// import Logo from "../../assets/logo-compass.svg";
+import LogoMobile from "../../assets/logo.svg";
 import Mask from "../../assets/mask-pc-logo.png";
 import { useNavigate } from "react-router-dom";
 
@@ -34,6 +35,7 @@ const Login = () => {
   return (
     <SectionLogin>
       <Form onSubmit={handleSubmit}>
+        <img src={LogoMobile} alt="Compass logo"/>
         <h1>Olá,</h1>
         <p>Para continuar navegando de forma segura, efetue o login na rede.</p>
         <h2>Login</h2>

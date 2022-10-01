@@ -36,6 +36,10 @@ export const Form = styled.form`
   color: ${mainColor};
   width: 50vw;
 
+  img {
+    display: none;
+  }
+
   h1 {
     text-align: justify;
     font-size: 3.3rem;
@@ -56,18 +60,50 @@ export const Form = styled.form`
     font-size: 1.5rem;
   }
 
-  @media (max-width: 1024px) {
-    p {
-      font-size: 0.95rem;
+  @media (max-width: 800px) {
+    img {
+      display: block;
+      width: 8rem;
+      height: 3.5rem;
+      margin-bottom: 5rem;
     }
+  }
+
+  @media (max-width: 320px) {
+   h1 {
+    font-size: 2.5rem;
+    /* margin-left: 3rem; */
+    width: 85vw;
+   }
+
+   p {
+    font-size: 0.8rem;
+    margin-left: 0rem;
+    width: 85vw;
+    margin-bottom: 4rem;
+   }
+
+   h2 {
+    font-size: 1.5rem;
+    /* width: 80vw; */
+    margin-left: 2.5rem;
+   }
   }
 `;
 
 export const Span = styled.span`
   color: ${secondaryColor};
-  width: 30%;
+  /* width: 50%;
   text-align: center;
-  padding-top: 0.5rem;
+  padding-top: 0.5rem; */
+  font-size: 1rem;
+  text-align: center;
+  width: 17rem;
+
+  @media (max-width: 320px) {
+    width: 14rem;
+    font-size: 0.8rem;
+  }
 `;
 
 // export const BackgroundLogin = styled.div`

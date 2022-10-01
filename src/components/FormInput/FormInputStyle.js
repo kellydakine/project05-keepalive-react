@@ -5,6 +5,12 @@ export const ContainerInput = styled.div`
   display: flex;
   margin-left: 2rem;
 
+  @media (max-width: 410px) {
+   /* margin: 0; */
+  } // NAO USAR
+
+  
+
   input {
     border-radius: 50px;
     background: none;
@@ -18,10 +24,14 @@ export const ContainerInput = styled.div`
     }
   }
 
-  @media (max-width: 410px) {
-   max-width: 16rem;
+  @media (max-width: 380px) {
+   width: 18rem;
    justify-content: center;
    margin: 0;
+  }
+
+  @media (max-width: 320px) {
+   width: 15rem;
   }
 `;
 
