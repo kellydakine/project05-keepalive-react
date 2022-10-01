@@ -3,7 +3,7 @@ import { Container, Header } from "./HomeStyle";
 import Logo from "../../assets/compass-logo.svg";
 import Weather from "../../components/Geolocation/Weather";
 import Time from "../../components/Geolocation/Time";
-
+import SectionHome from "./SectionHome";
 
 const Home = () => {
   return (
@@ -13,6 +13,7 @@ const Home = () => {
         <Time />
         <Weather />
       </Header>
+      <SectionHome />
     </Container>
   );
 };
