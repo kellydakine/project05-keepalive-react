@@ -1,13 +1,30 @@
-import { backgroundLogin, whiteColor, secondaryColor, mainColor } from "../../UI/variable";
+import {
+  backgroundLogin,
+  whiteColor,
+  secondaryColor,
+  mainColor,
+} from "../../UI/variable";
 import styled from "styled-components";
-import Computer from "../../assets/computer.svg";
+import Computer from "../../assets/computer.png";
 
 export const SectionLogin = styled.section`
   background: ${backgroundLogin};
   color: ${whiteColor};
   display: flex;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
+
+  @media (max-width: 1024px) {
+    /* align-items: center; */
+    justify-content: space-evenly;
+  }
+
+  @media (max-width: 570px) {
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    justify-content: space-evenly;
+  }
 `;
 
 export const Form = styled.form`
@@ -17,7 +34,7 @@ export const Form = styled.form`
   flex-direction: column;
   /* margin: 0 auto; */
   color: ${mainColor};
-  width: 50%;
+  width: 50vw;
 
   h1 {
     text-align: justify;
@@ -28,15 +45,21 @@ export const Form = styled.form`
   }
 
   p {
-    max-width: 18rem;
+    width: 18rem;
     line-height: 1.2rem;
     margin-bottom: 15vh;
   }
 
   h2 {
-  margin-bottom: 2rem;
-  margin-right: 13.5rem;
-  font-size: 1.5rem;
+    margin-bottom: 2rem;
+    margin-right: 13.5rem;
+    font-size: 1.5rem;
+  }
+
+  @media (max-width: 1024px) {
+    p {
+      font-size: 0.95rem;
+    }
   }
 `;
 
@@ -45,21 +68,40 @@ export const Span = styled.span`
   width: 30%;
   text-align: center;
   padding-top: 0.5rem;
-`
-
-export const BackgroundLogin = styled.div`
-  background-image: url(${Computer});
-  display: flex;
-  justify-content: flex-end;
-  width: 50%;
-  height: 100vh;
-  background-size: cover;
-  background-repeat: no-repeat;
 `;
 
-export const ImgLogo = styled.img`
-  width: 15vw;
-  height: 8vh;
-  margin-right: 35%;
-  margin-top: 1.5rem;
+// export const BackgroundLogin = styled.div`
+//   background-image: url(${Computer});
+//   display: flex;
+//   justify-content: flex-end;
+//   width: 50%;
+//   height: 100vh;
+//   background-size: cover;
+//   background-repeat: no-repeat;
+
+//   @media (max-width: 1024px) {
+//     display: none;
+//   }
+// `;
+
+// export const ImgLogo = styled.img`
+//   width: 15vw;
+//   height: 8vh;
+//   margin-right: 35%;
+//   margin-top: 1.5rem;
+
+//   @media (max-width: 1024px) {
+//     display: none;
+//   }
+// `;
+
+export const Banner = styled.img`
+  object-fit: cover;
+  object-position: top center;
+  width: 50vw;
+  height: 100vh;
+
+  @media (max-width: 800px) {
+    display: none;
+  }
 `;

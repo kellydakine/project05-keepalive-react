@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { backgroundHome } from "../../UI/variable";
 
 export const Container = styled.div`
-    background: ${backgroundHome};
+    /* background: ${backgroundHome}; */
     width: 100vw;
     height: 100vh;
 `

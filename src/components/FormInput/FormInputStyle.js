@@ -17,6 +17,12 @@ export const ContainerInput = styled.div`
       color: ${mainColor};
     }
   }
+
+  @media (max-width: 410px) {
+   max-width: 16rem;
+   justify-content: center;
+   margin: 0;
+  }
 `;
 
 export const Icon = styled.div`

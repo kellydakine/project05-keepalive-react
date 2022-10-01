@@ -8,7 +8,7 @@ const SectionHome = () => {
       <BallImage src={BallCompass} alt="" />
       <Descriptions>
         <h3>Our mission is</h3>
-        <p>Nossa misão é</p>
+        <p>Nossa missão é</p>
         <h2>to transform the world</h2>
         <p>transformar o mundo</p>
         <h2>building digital experiences</h2>

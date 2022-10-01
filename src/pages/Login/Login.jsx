@@ -1,8 +1,9 @@
 import React, { useState } from "react";
-import { SectionLogin, Form, BackgroundLogin, ImgLogo, Span } from "./LoginStyle";
+import { SectionLogin, Form, BackgroundLogin, ImgLogo, Span, Banner } from "./LoginStyle";
 import FormInput from "../../components/FormInput/FormInput";
 import Button from "../../components/Button/Button";
-import Logo from "../../assets/logo-compass.png";
+import Logo from "../../assets/logo-compass.svg";
+import Mask from "../../assets/mask-pc-logo.png";
 import { useNavigate } from "react-router-dom";
 
 const Login = () => {
@@ -61,9 +62,10 @@ const Login = () => {
         {error && <Span>{error}</Span>}
         <Button>Continuar</Button>
       </Form>
-      <BackgroundLogin>
+      {/* <BackgroundLogin>
         <ImgLogo src={Logo} alt="Compass Logo"></ImgLogo>
-      </BackgroundLogin>
+      </BackgroundLogin> */}
+      <Banner src={Mask}/>
     </SectionLogin>
   );
 };
