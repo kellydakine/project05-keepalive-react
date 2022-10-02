@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { Footer, TextAlert } from "./FooterHomeStyle";
+import { ContainerCounter, CounterNumber, Footer, LogoutButton, NavButton, Navigation, TextAlert } from "./FooterHomeStyle";
 
 const FooterHome = () => {
   const [counter, setCounter] = useState(6000);
@@ -26,17 +26,17 @@ const FooterHome = () => {
         </p>
         <hr />
       </TextAlert>
-      <div>
+      <ContainerCounter>
         <p>Application refresh in</p>
-        <div>
+        <CounterNumber>
           <h3>60</h3>
           <p>seconds</p>
-        </div>
-      </div>
-      <div>
-        <a href="https://www.google.com.br/">Continuar Navegando</a>
-        <a href="http://localhost:3000/">Logout</a>
-      </div>
+        </CounterNumber>
+      </ContainerCounter>
+      <Navigation>
+        <NavButton href="https://www.google.com.br/">Continuar Navegando</NavButton>
+        <LogoutButton href="http://localhost:3000/">Logout</LogoutButton>
+      </Navigation>
     </Footer>
   );
 };

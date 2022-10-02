@@ -9,13 +9,25 @@ export const Section = styled.section`
 `;
 
 export const BallImage = styled.img`
-  width: 25vw;
+  /* width: 25vw;
   height: 74.8vh;
-  max-height: 70vh;
-  align-self: flex-end;
-  box-sizing: border-box;
-  margin-bottom: -5%;
-  z-index: -1;
+  max-height: 70vh; */
+  /* box-sizing: border-box; */
+  /* margin-bottom: -5%; */
+  /* z-index: -1; */
+
+
+  /* width: 100vw;
+  max-width: 600px;
+  height: auto;
+  align-self: flex-end; */
+
+
+  max-inline-size: 100%;
+  block-size: auto;
+  object-fit: fill;
+  object-position: top center;
+
 `;
 
 export const Descriptions = styled.div`
