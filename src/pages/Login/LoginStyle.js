@@ -12,7 +12,7 @@ export const SectionLogin = styled.section`
   color: ${whiteColor};
   display: flex;
   width: 100vw;
-  height: 100vh;
+  /* height: 100vh; */
 
   @media (max-width: 1024px) {
     /* align-items: center; */

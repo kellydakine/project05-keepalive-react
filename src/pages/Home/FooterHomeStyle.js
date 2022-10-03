@@ -14,11 +14,15 @@ export const Footer = styled.footer`
   position: fixed;
 
   @media (max-width: 1024px) {
-    /* width: 100vw; */
-    /* position: absolute;
-    bottom: 0; */
-    height: 105.5px;
-    max-height: 6.5rem;
+    /* height: 105.5px;
+    max-height: 6.5rem; */
+  }
+
+  @media (max-width: 780px) {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    /* height: 100vh; */
   }
 `;
 
@@ -42,12 +46,12 @@ export const TextAlert = styled.div`
     align-items: center;
   }
 
-  @media (max-width: 1500px) {
+  /* @media (max-width: 1500px) {
     width: 60%;
     p {
       margin-left: 10rem;
     }
-  }
+  } */
 
   /* @media (max-width: 880px) {
     width: 100vw;
@@ -90,6 +94,10 @@ export const Navigation = styled.div`
   display: flex;
   justify-content: center;
   text-align: center;
+
+  @media (max-width: 780px) {
+    flex-direction: column;
+  }
 `;
 
 export const Button = styled.a`
