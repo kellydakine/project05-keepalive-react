@@ -44,7 +44,7 @@ export const TextAlert = styled.div`
     align-items: center;
   }
 
-  @media (max-width: 1201px) {
+  /* @media (max-width: 1201px) {
     width: 100%;
     p {
       margin: 0;
@@ -55,6 +55,14 @@ export const TextAlert = styled.div`
     width: 100%;
     p {
       margin: 0;
+    }
+  } */
+
+  @media (max-width: 780px) {
+    width: 100%;
+    p {
+      margin: 0;
+      margin-left: 2rem;
     }
   }
 `;

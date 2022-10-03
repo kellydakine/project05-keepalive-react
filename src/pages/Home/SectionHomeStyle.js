@@ -7,27 +7,29 @@ export const Section = styled.section`
   justify-content: space-between;
   align-items: center;
   height: 80vh;
+
+  @media (max-width: 780px) {
+    padding: 0;
+    width: 100vw;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
 `;
 
 export const BallImage = styled.img`
-  /* width: 100vw;
-  max-width: 600px;
-  height: auto;
-
-  /* max-inline-size: 50%;
-  block-size: auto;
-  object-fit: cover;
-  object-position: bottom center; */
-
-  // display: block;
-
   align-self: flex-end;
-  max-width: 45vw;
-  max-height: 38rem;
+  max-width: 50vw;
+  max-height: 40rem;
 
   @media (max-width: 1440px) {
     max-width: 35vw;
     max-height: 35rem;
+  }
+
+  @media (max-width: 960px) {
+    max-width: 30vw;
+    max-height: 30rem;
   }
 
   @media (max-width: 780px) {
@@ -44,7 +46,7 @@ export const BallImage = styled.img`
 //   background-position: bottom left;
 
 //   @media (max-width: 1440px) {
-    
+
 //   }
 
 //   @media (max-width: 780px) {
@@ -53,7 +55,6 @@ export const BallImage = styled.img`
 // `;
 
 export const Descriptions = styled.div`
-  /* width: 60%; */
   padding-right: 8rem;
   text-align: right;
 
@@ -61,11 +62,9 @@ export const Descriptions = styled.div`
     font-size: 2em;
     color: ${titleColor};
     font-weight: 700;
-    /* margin: 0; */
   }
   h2 {
     font-size: 2.8em;
-    /* margin: 0; */
     color: ${titleColor};
     font-weight: 700;
   }
@@ -100,6 +99,34 @@ export const Descriptions = styled.div`
     }
     p {
       font-size: 1rem;
+    }
+  }
+
+  @media (max-width: 960px) {
+    padding-right: 3rem;
+    width: 70%;
+    h3 {
+      font-size: 1.2rem;
+    }
+    h2 {
+      font-size: 2rem;
+    }
+    p {
+      font-size: 0.8rem;
+    }
+  }
+
+  @media (max-width: 780px) {
+    width: 100vw;
+    margin-right: 1.5rem;
+    h3 {
+      font-size: 1.8rem;
+    }
+    h2 {
+      font-size: 2.5rem;
+    }
+    p {
+      font-size: 1.2rem;
     }
   }
 `;
