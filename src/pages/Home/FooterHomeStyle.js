@@ -38,12 +38,25 @@ export const TextAlert = styled.div`
     /* width: 53%; */
     margin-left: 15rem;
     margin-top: 0.8rem;
+    /* border-bottom: 1px solid white; */
+
+    @media (max-width: 780px) {
+      width: 100%;
+      text-align: center;
+      margin-top: 1.5rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid white;
+    }
   }
 
   hr {
     border: 1px solid white;
     height: 50px;
     align-items: center;
+
+    @media (max-width: 780px) {
+      display: none;
+    }
   }
 
   @media (max-width: 1430px) {
@@ -83,6 +96,10 @@ export const ContainerCounter = styled.div`
     /* width: 28%; */
     /* align-items: flex-end; */
   }
+
+  @media (max-width: 780px) {
+    padding: 0.8rem;
+  }
 `;
 
 export const CounterNumber = styled.div`
@@ -102,7 +119,7 @@ export const Navigation = styled.div`
   text-align: center;
 
   @media (max-width: 780px) {
-    flex-direction: column;
+    padding-bottom: 1rem;
   }
 `;
 
@@ -118,7 +135,11 @@ export const Button = styled.a`
 export const NavButton = styled(Button)`
   background-color: ${whiteColor};
   color: ${titleColor};
-`;
+
+  @media (max-width: 780px) {
+    border-radius: 5px;
+  }
+`
 
 export const LogoutButton = styled(Button)`
   color: ${whiteColor};
