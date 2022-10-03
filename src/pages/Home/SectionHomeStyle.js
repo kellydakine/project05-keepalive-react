@@ -20,15 +20,20 @@ export const Section = styled.section`
 export const BallImage = styled.img`
   align-self: flex-end;
   max-width: 50vw;
-  max-height: 40rem;
+  max-height: 70vh;
 
-  @media (max-width: 1440px) {
-    max-width: 35vw;
-    max-height: 35rem;
-  }
+  /* @media (max-width: 1440px) {
+    width: 36vw;
+    height: 70vh;
+  } */
 
   @media (max-width: 960px) {
     max-width: 30vw;
+    max-height: 30rem;
+  }
+
+  @media (max-width: 1024px) {
+    max-width: 35vw;
     max-height: 30rem;
   }
 
@@ -43,6 +48,7 @@ export const BallImage = styled.img`
 //   height: 74.8vh;
 //   background-repeat: no-repeat;
 //   background-size: 70% 80%;
+//   background-size: contain;
 //   background-position: bottom left;
 
 //   @media (max-width: 1440px) {
@@ -109,7 +115,7 @@ export const Descriptions = styled.div`
       font-size: 1.2rem;
     }
     h2 {
-      font-size: 2rem;
+      font-size: 1.8rem;
     }
     p {
       font-size: 0.8rem;

@@ -24,11 +24,9 @@ export const Footer = styled.footer`
 
 export const TextAlert = styled.div`
   display: flex;
-  width: 50%;
+  width: 50vw;
   gap: 0.8rem;
-  /* width: 540px; */
   text-align: right;
-  /* margin-left: 20%; */
 
   p {
     font-size: 0.7em;
@@ -44,27 +42,24 @@ export const TextAlert = styled.div`
     align-items: center;
   }
 
-  /* @media (max-width: 1201px) {
-    width: 100%;
+  @media (max-width: 1500px) {
+    width: 60%;
     p {
-      margin: 0;
+      margin-left: 10rem;
     }
   }
 
-  @media (max-width: 790px) {
-    width: 100%;
+  /* @media (max-width: 880px) {
+    width: 100vw;
     p {
-      margin: 0;
+      width: 100%;
+      margin-top: 0.5rem;
+      margin-left: 0.5rem;
+    }
+    hr {
+      gap: 1rem;
     }
   } */
-
-  @media (max-width: 780px) {
-    width: 100%;
-    p {
-      margin: 0;
-      margin-left: 2rem;
-    }
-  }
 `;
 
 export const ContainerCounter = styled.div`

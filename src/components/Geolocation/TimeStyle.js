@@ -16,7 +16,7 @@ export const ContainerTime = styled.div`
     margin-top: -5%;
   }
 
-  @media (max-width: 1024px) {
+  @media (max-width: 780px) {
     display: none;
   }
 `;
