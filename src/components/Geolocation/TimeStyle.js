@@ -15,4 +15,8 @@ export const ContainerTime = styled.div`
     font-size: 0.8rem;
     margin-top: -5%;
   }
+
+  @media (max-width: 1024px) {
+    display: none;
+  }
 `;

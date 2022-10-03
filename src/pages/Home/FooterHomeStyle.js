@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { backgroundLogin, whiteColor } from "../../UI/variable";
+import { backgroundLogin, titleColor, whiteColor } from "../../UI/variable";
 
 export const Footer = styled.footer`
   display: flex;
@@ -7,15 +7,19 @@ export const Footer = styled.footer`
   justify-content: space-between;
   background: ${backgroundLogin};
   color: ${whiteColor};
-  /* width: 100vw;
-  height: 105px; */
-  /* z-index: 1; */
 
-  /* clear: both; */
-  width: 100vw;
-  position: relative;
+  width: 100%;
   bottom: 0;
-  height: 105px;
+  left: 0;
+  position: fixed;
+
+  @media (max-width: 1024px) {
+    /* width: 100vw; */
+    /* position: absolute;
+    bottom: 0; */
+    height: 105.5px;
+    max-height: 6.5rem;
+  }
 `;
 
 export const TextAlert = styled.div`
@@ -38,6 +42,20 @@ export const TextAlert = styled.div`
     border: 1px solid white;
     height: 50px;
     align-items: center;
+  }
+
+  @media (max-width: 1201px) {
+    width: 100%;
+    p {
+      margin: 0;
+    }
+  }
+
+  @media (max-width: 790px) {
+    width: 100%;
+    p {
+      margin: 0;
+    }
   }
 `;
 
@@ -65,7 +83,6 @@ export const CounterNumber = styled.div`
   }
 `;
 
-
 export const Navigation = styled.div`
   display: flex;
   justify-content: center;
@@ -77,16 +94,15 @@ export const Button = styled.a`
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  color: #c13216;
   width: 130px;
   height: 106.5px;
 `;
 
 export const NavButton = styled(Button)`
-  background-color: white;
-  color: #c13216;
+  background-color: ${whiteColor};
+  color: ${titleColor};
 `;
 
 export const LogoutButton = styled(Button)`
-  color: white;
+  color: ${whiteColor};
 `;

@@ -1,12 +1,13 @@
 import React from "react";
-import { BallImage, Descriptions, Section } from "./SectionHomeStyle";
-// import BallCompass from "../../assets/ball-compass.svg";
-import teste from "../../assets/teste.png"
+import { BallImage, Descriptions, ImgCompasso, Section } from "./SectionHomeStyle";
+import BallCompass from "../../assets/ball-compass.svg";
+import teste from "../../assets/teste.svg"
 
 const SectionHome = () => {
   return (
-    <Section>
+    <Section> 
       <BallImage src={teste} alt="" />
+      {/* <ImgCompasso></ImgCompasso> */}
       <Descriptions>
         <h3>Our mission is</h3>
         <p>Nossa missão é</p>
