@@ -27,7 +27,7 @@ const FooterHome = () => {
         <hr />
       </TextAlert>
       <ContainerCounter>
-        <p>Application refresh in</p>
+        <p>Application <br/> refresh in</p>
         <CounterNumber>
           <h3>60</h3>
           <p>seconds</p>

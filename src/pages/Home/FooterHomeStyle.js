@@ -35,9 +35,9 @@ export const TextAlert = styled.div`
   p {
     font-size: 0.7em;
     line-height: 15px;
-    width: 53%;
-    margin-left: 18rem;
-    margin-top: 1rem;
+    /* width: 53%; */
+    margin-left: 15rem;
+    margin-top: 0.8rem;
   }
 
   hr {
@@ -46,12 +46,18 @@ export const TextAlert = styled.div`
     align-items: center;
   }
 
-  /* @media (max-width: 1500px) {
-    width: 60%;
+  @media (max-width: 1430px) {
+    /* width: 60%; */
     p {
-      margin-left: 10rem;
+      margin-left: 5rem;
     }
-  } */
+  }
+
+  @media (max-width: 1120px) {
+    p {
+      margin-left: 0.5rem;
+    }
+  }
 
   /* @media (max-width: 880px) {
     width: 100vw;
@@ -74,8 +80,8 @@ export const ContainerCounter = styled.div`
 
   p {
     font-size: 0.7rem;
-    width: 28%;
-    align-items: flex-end;
+    /* width: 28%; */
+    /* align-items: flex-end; */
   }
 `;
 
