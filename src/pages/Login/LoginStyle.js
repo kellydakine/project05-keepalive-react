@@ -12,7 +12,7 @@ export const SectionLogin = styled.section`
   color: ${whiteColor};
   display: flex;
   width: 100vw;
-  /* height: 100vh; */
+  height: 100vh;
 
   @media (max-width: 1024px) {
     /* align-items: center; */
@@ -25,7 +25,11 @@ export const SectionLogin = styled.section`
     align-items: center;
     justify-content: space-evenly;
   }
-`;
+
+  @media screen and (max-width: 653px) and (max-height: 280px) {
+    height: 100%;
+  }
+`
 
 export const Form = styled.form`
   display: flex;
@@ -70,24 +74,24 @@ export const Form = styled.form`
   }
 
   @media (max-width: 320px) {
-   h1 {
-    font-size: 2.5rem;
-    /* margin-left: 3rem; */
-    width: 85vw;
-   }
+    h1 {
+      font-size: 2.5rem;
+      /* margin-left: 3rem; */
+      width: 85vw;
+    }
 
-   p {
-    font-size: 0.8rem;
-    margin-left: 0rem;
-    width: 85vw;
-    margin-bottom: 4rem;
-   }
+    p {
+      font-size: 0.8rem;
+      margin-left: 0rem;
+      width: 85vw;
+      margin-bottom: 4rem;
+    }
 
-   h2 {
-    font-size: 1.5rem;
-    /* width: 80vw; */
-    margin-left: 2.5rem;
-   }
+    h2 {
+      font-size: 1.5rem;
+      /* width: 80vw; */
+      margin-left: 2.5rem;
+    }
   }
 `;
 
