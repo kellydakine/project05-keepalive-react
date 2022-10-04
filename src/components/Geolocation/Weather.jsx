@@ -10,8 +10,6 @@ class Weather extends React.Component {
     state: undefined,
     temperatureC: undefined,
     temperatureF: undefined,
-    // sunrise: undefined,
-    // sunset: undefined,
     errorMessage: undefined,
   };
 
@@ -34,8 +32,6 @@ class Weather extends React.Component {
       temperatureC: Math.round(data.main.temp),
       temperatureF: Math.round(data.main.temp * 1.8 + 32),
       icon: data.weather[0].icon,
-      // sunrise: moment.unix(data.sys.sunrise).format("hh:mm a"),
-      // sunset: moment.unix(data.sys.sunset).format("hh:mm a"),
     });
   };
 

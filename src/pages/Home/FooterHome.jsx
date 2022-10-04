@@ -29,7 +29,7 @@ const FooterHome = () => {
       <ContainerCounter>
         <p>Application <br/> refresh in</p>
         <CounterNumber>
-          <h3>60</h3>
+          <h3>{counter}</h3>
           <p>seconds</p>
         </CounterNumber>
       </ContainerCounter>

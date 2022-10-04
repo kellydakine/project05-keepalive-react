@@ -5,12 +5,6 @@ export const ContainerInput = styled.div`
   display: flex;
   margin-left: 2rem;
 
-  @media (max-width: 410px) {
-   /* margin: 0; */
-  } // NAO USAR
-
-  
-
   input {
     border-radius: 50px;
     background: none;

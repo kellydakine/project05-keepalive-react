@@ -13,16 +13,10 @@ export const Footer = styled.footer`
   left: 0;
   position: fixed;
 
-  @media (max-width: 1024px) {
-    /* height: 105.5px;
-    max-height: 6.5rem; */
-  }
-
   @media (max-width: 780px) {
     display: flex;
     flex-direction: column;
     position: relative;
-    /* height: 100vh; */
   }
 `;
 
@@ -60,7 +54,6 @@ export const TextAlert = styled.div`
   }
 
   @media (max-width: 1430px) {
-    /* width: 60%; */
     p {
       margin-left: 5rem;
     }
@@ -74,32 +67,16 @@ export const TextAlert = styled.div`
 
   @media (max-width: 780px) {
     width: 80vw;
-    
   }
-
-  /* @media (max-width: 880px) {
-    width: 100vw;
-    p {
-      width: 100%;
-      margin-top: 0.5rem;
-      margin-left: 0.5rem;
-    }
-    hr {
-      gap: 1rem;
-    }
-  } */
 `;
 
 export const ContainerCounter = styled.div`
   display: flex;
   gap: 2rem;
   align-items: center;
-  /* margin-left: -20rem; */
-
+  
   p {
     font-size: 0.7rem;
-    /* width: 28%; */
-    /* align-items: flex-end; */
   }
 
   @media (max-width: 1024px) {
