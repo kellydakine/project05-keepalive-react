@@ -8,7 +8,7 @@ export const ContainerInput = styled.div`
   input {
     border-radius: 50px;
     background: none;
-    padding: 0.9rem;
+    padding: 0.9rem 2.2rem 0.9rem 0.5rem;
     margin-bottom: 1.5rem;
     width: 16rem;
     color: ${mainColor};

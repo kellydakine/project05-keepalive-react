@@ -7,7 +7,7 @@ export const BtnContinue = styled.button`
   filter: drop-shadow(5px 5px 15px rgba(0, 0, 0, 0.5));
   border: none;
   border-radius: 50px;
-  width: 18rem;
+  width: 18.5rem;
   height: 3rem;
   color: white;
   font-size: 15px;
@@ -18,6 +18,6 @@ export const BtnContinue = styled.button`
   }
 
   @media (max-width: 320px) {
-   width: 15rem;
+   width: 16rem;
   }
 `;
