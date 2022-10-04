@@ -12,7 +12,7 @@ export const ContainerWeather = styled.div`
         justify-content: space-evenly;
     }
     h2 {
-        font-size: 2rem;
+        font-size: 2.3rem;
         font-weight: bolder;
     }
 

@@ -102,10 +102,14 @@ export const ContainerCounter = styled.div`
     /* align-items: flex-end; */
   }
 
+  @media (max-width: 1024px) {
+    gap: 1rem;
+  }
+
   @media (max-width: 780px) {
     padding: 0.8rem;
   }
-`;
+`
 
 export const CounterNumber = styled.div`
   display: flex;
@@ -116,7 +120,13 @@ export const CounterNumber = styled.div`
     font-weight: 700;
     align-items: center;
   }
-`;
+
+  @media (max-width: 1024px) {
+    h3 {
+      font-size: 2.5rem;
+    }
+  }
+`
 
 export const Navigation = styled.div`
   display: flex;
@@ -141,6 +151,11 @@ export const NavButton = styled(Button)`
   background-color: ${whiteColor};
   color: ${titleColor};
 
+  @media (max-width: 1024px) {
+    font-size: 0.8rem;
+    width: 110px;
+  }
+
   @media (max-width: 780px) {
     border-radius: 5px;
   }
@@ -154,6 +169,11 @@ export const NavButton = styled(Button)`
 
 export const LogoutButton = styled(Button)`
   color: ${whiteColor};
+
+  @media (max-width: 1024px) {
+    font-size: 0.8rem;
+    width: 110px;
+  }
 
   @media (max-width: 420px) {
     width: 100px;
