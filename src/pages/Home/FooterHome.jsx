@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { ContainerCounter, CounterNumber, Footer, LogoutButton, NavButton, Navigation, TextAlert } from "./FooterHomeStyle";
 
 const FooterHome = () => {
-  const [counter, setCounter] = useState(6000);
+  const [counter, setCounter] = useState(60);
   const navigate = useNavigate();
 
   useEffect(() => {
