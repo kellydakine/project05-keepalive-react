@@ -15,4 +15,13 @@ export const ContainerWeather = styled.div`
         font-size: 2rem;
         font-weight: bolder;
     }
+
+    @media (max-width: 320px) {
+        img {
+            width: 25%;
+        }
+        h2 {
+            font-size: 1.5rem;
+        }
+    }
 `

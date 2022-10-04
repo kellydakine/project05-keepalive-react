@@ -126,13 +126,41 @@ export const Descriptions = styled.div`
     width: 100vw;
     margin-right: 1.5rem;
     h3 {
-      font-size: 1.8rem;
+      font-size: 1.5rem;
     }
     h2 {
-      font-size: 2.5rem;
+      font-size: 2.0rem;
     }
     p {
-      font-size: 1.2rem;
+      font-size: 1rem;
+    }
+  }
+
+  @media (max-width: 780px) {
+    margin-right: 0rem;
+    h3 {
+      font-size: 1rem;
+    }
+    h2 {
+      font-size: 1.5rem;
+    }
+    p {
+      font-size: 0.8rem;
+    }
+  }
+
+  @media (max-width: 420px) {
+    margin-right: 0rem;
+    padding: 0.5rem;
+    text-align: start;
+    h3 {
+      font-size: 1rem;
+    }
+    h2 {
+      font-size: 1rem;
+    }
+    p {
+      font-size: 0.8rem;
     }
   }
 `;

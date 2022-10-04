@@ -36,12 +36,12 @@ export const TextAlert = styled.div`
     font-size: 0.7em;
     line-height: 15px;
     /* width: 53%; */
-    margin-left: 15rem;
+    /* margin-left: 15rem; */
     margin-top: 0.8rem;
     /* border-bottom: 1px solid white; */
 
     @media (max-width: 780px) {
-      width: 100%;
+      /* width: 00px; */
       text-align: center;
       margin-top: 1.5rem;
       padding-bottom: 1rem;
@@ -70,6 +70,11 @@ export const TextAlert = styled.div`
     p {
       margin-left: 0.5rem;
     }
+  }
+
+  @media (max-width: 780px) {
+    width: 80vw;
+    
   }
 
   /* @media (max-width: 880px) {
@@ -139,8 +144,20 @@ export const NavButton = styled(Button)`
   @media (max-width: 780px) {
     border-radius: 5px;
   }
+
+  @media (max-width: 420px) {
+    width: 100px;
+    height: 100px;
+    font-size: 0.8rem;
+  }
 `
 
 export const LogoutButton = styled(Button)`
   color: ${whiteColor};
+
+  @media (max-width: 420px) {
+    width: 100px;
+    height: 100px;
+    font-size: 0.8rem;
+  }
 `;
