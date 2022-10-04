@@ -109,8 +109,9 @@ export const Navigation = styled.div`
   display: flex;
   justify-content: center;
   text-align: center;
-
+  
   @media (max-width: 780px) {
+    width: 100%; // teste
     padding-bottom: 1rem;
   }
 `;
@@ -122,6 +123,10 @@ export const Button = styled.a`
   text-decoration: none;
   width: 130px;
   height: 106.5px;
+
+  /* @media (max-width: 780px) {
+    width: 50%;
+  } */
 `;
 
 export const NavButton = styled(Button)`
@@ -135,11 +140,12 @@ export const NavButton = styled(Button)`
 
   @media (max-width: 780px) {
     border-radius: 5px;
+    width: 50%;
   }
 
   @media (max-width: 420px) {
-    width: 100px;
-    height: 100px;
+    /* width: 100px;
+    height: 100px; */
     font-size: 0.8rem;
   }
 `
@@ -152,9 +158,13 @@ export const LogoutButton = styled(Button)`
     width: 110px;
   }
 
+  @media (max-width: 780px) {
+    width: 50%;
+  }
+
   @media (max-width: 420px) {
-    width: 100px;
-    height: 100px;
+    /* width: 100px;
+    height: 100px; */
     font-size: 0.8rem;
   }
 `;

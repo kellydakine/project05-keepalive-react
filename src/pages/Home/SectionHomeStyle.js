@@ -58,7 +58,7 @@ export const Descriptions = styled.div`
   }
 
   @media (max-width: 1120px) {
-    padding-right: 3rem;
+    padding-right: 5rem;
     width: 70%;
     h3 {
       font-size: 1.6rem;
@@ -74,17 +74,18 @@ export const Descriptions = styled.div`
   @media (max-width: 780px) {
     width: 100vw;
     margin-right: 0;
+    padding-right: 3.5rem;
   }
 
   @media (max-width: 420px) {
     margin-right: 0rem;
-    padding: 0.5rem;
-    text-align: start;
+    padding: 2rem;
+    /* text-align: start; */
     h3 {
-      font-size: 1rem;
+      font-size: 1.2rem;
     }
     h2 {
-      font-size: 1rem;
+      font-size: 1.5rem;
     }
     p {
       font-size: 0.8rem;
