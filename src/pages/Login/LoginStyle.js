@@ -1,9 +1,4 @@
-import {
-  backgroundLogin,
-  whiteColor,
-  secondaryColor,
-  mainColor,
-} from "../../UI/variable";
+import { backgroundLogin, whiteColor, secondaryColor, mainColor } from "../../UI/variable";
 import styled from "styled-components";
 
 export const SectionLogin = styled.section`
@@ -26,6 +21,10 @@ export const SectionLogin = styled.section`
 
   @media screen and (max-width: 653px) and (max-height: 280px) {
     height: 100%;
+  }
+
+  @media screen and (max-height: 680px) { 
+    min-height: 660px;
   }
 `;
 

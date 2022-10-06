@@ -28,13 +28,12 @@ const Login = () => {
       navigate("/home");
     }
     setError("Ops, usuário ou senha inválidos. Tente novamente!");
-    console.log({ username }, { password });
   }
 
   return (
     <SectionLogin>
       <Form onSubmit={handleSubmit}>
-        <img src={LogoMobile} alt="Compass logo"/>
+        <img src={LogoMobile} alt="Compass logo" />
         <h1>Olá,</h1>
         <p>Para continuar navegando de forma segura, efetue o login na rede.</p>
         <h2>Login</h2>
@@ -63,7 +62,7 @@ const Login = () => {
         {error && <Span>{error}</Span>}
         <Button>Continuar</Button>
       </Form>
-      <Banner src={Mask}/>
+      <Banner src={Mask} />
     </SectionLogin>
   );
 };

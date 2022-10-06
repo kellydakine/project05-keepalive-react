@@ -80,7 +80,6 @@ export const Descriptions = styled.div`
   @media (max-width: 420px) {
     margin-right: 0rem;
     padding: 2rem;
-    /* text-align: start; */
     h3 {
       font-size: 1.2rem;
     }
